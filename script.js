@@ -40,10 +40,10 @@ function element(tag, classname, id, text) {
   container.append(row)
   document.body.append(h1,container)
 
-function weather(country,lattiude,longitude)
+function weather(country,latt,long)
 {
-  const lat=lattiude;
-  const lon=longitude;
+  const lat=latt;
+  const lon=long;
   const c=country;
   const response1=fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=b3b99ecb5e2d063b1446032f8f4ca8ff`)
   response1.then((data1)=>data1.json())
